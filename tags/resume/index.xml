@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>resume on Mike Johnson</title>
+    <link>/tags/resume/</link>
+    <description>Recent content in resume on Mike Johnson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sat, 24 Aug 2019 15:57:36 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/resume/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CV</title>
+      <link>/about/cv/</link>
+      <pubDate>Sat, 24 Aug 2019 15:57:36 +0000</pubDate>
+      
+      <guid>/about/cv/</guid>
+      <description>Curriculum Vitae - Mike Johnson Summary Experienced DevOps engineer and Linux system administrator with cloud experience on GCP. I have a particular interest in High Performance Computing for researchers and engineers. Free software proponent.
+Professional experience
+May 2014 to Nov 2019: SRE - Systems Engineer (ex. DevOps, ex SA) - DeepMind, Google Health UK
+I designed, built, developed, and maintained the infrastructure and platform for DeepMind Health - built on Linux, running Docker and Kubernetes, and isolated from the Google production network.</description>
+    </item>
+    
+  </channel>
+</rss>

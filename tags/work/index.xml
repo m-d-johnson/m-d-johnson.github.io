@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>work on Mike Johnson</title>
+    <link>/tags/work/</link>
+    <description>Recent content in work on Mike Johnson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 22 Aug 2019 13:40:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/work/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DeepMind Health</title>
+      <link>/tech/work/google-health/</link>
+      <pubDate>Thu, 22 Aug 2019 13:40:00 +0000</pubDate>
+      
+      <guid>/tech/work/google-health/</guid>
+      <description>I was involved with DeepMind Health from its very early days. As I&amp;rsquo;m under NDA, I can&amp;rsquo;t go into details here. This is a shame, as DeepMind Health has been quite successful. We produced the Streams application as well as some notable research output on the subject of computerised analysis of retinal imaging paper available here. DeepMind Health eventually became part of the new Google Health effort. My role was focused around providing infrastructure for us to start handling data in the right way for us, the NHS, and its patients.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>draft on Mike Johnson</title>
+    <link>/categories/draft/</link>
+    <description>Recent content in draft on Mike Johnson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sat, 11 Apr 2020 21:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/draft/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>test page</title>
+      <link>/tech/draft/draft/</link>
+      <pubDate>Sat, 11 Apr 2020 21:00:00 +0000</pubDate>
+      
+      <guid>/tech/draft/draft/</guid>
+      <description> Playing with Hugo  </description>
+    </item>
+    
+  </channel>
+</rss>

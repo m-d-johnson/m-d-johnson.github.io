@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Poking around the HOPI HP-9800 | Mike Johnson</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/theme-override.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css" integrity="sha384-D+9gmBxUQogRLqvARvNLmA9hS2x//eK1FhVb9PiU86gmcrBrJAQT8okdJ4LMp2uv" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js" integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/contrib/auto-render.min.js" integrity="sha384-yACMu8JWxKzSp/C1YV86pzGiQ/l1YUfE8oPuahJQxzehAjEt2GiQuy/BIvl9KyeF" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body);
+        });
+    </script>
+
+<header>
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <nav>
+    <ul>
+      
+      
+      <li class="pull-left ">
+        <a href="/">/home/mike johnson</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="/">~/home</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="/categories/">~/categories</a>
+      </li>
+      
+      
+      <li class="pull-left ">
+        <a href="/tags/">~/tags</a>
+      </li>
+      
+
+      
+      
+      <li class="pull-right">
+        <a href="/index.xml">~/subscribe</a>
+      </li>
+      
+
+    </ul>
+  </nav>
+</header>
+
+  </head>
+
+  <body>
+    <br/>
+
+<div class="article-meta">
+<h1><span class="title">Poking around the HOPI HP-9800</span></h1>
+
+<h2 class="date">2019/03/16</h2>
+<p class="terms">
+  
+  
+  Categories: <a href="/categories/play">play</a> 
+  
+  
+  
+  
+</p>
+</div>
+
+
+
+<main>
+
+
+<h1 id="playing-with-the-hopi-hp-9800">Playing with the HOPI HP-9800</h1>
+
+<p>Here&rsquo;s a link to the <a href="https://github.com/m-d-johnson/gojuice">GitHub repository</a></p>
+
+<p>I recently bought one of these power analysers from eBay after seeing it used
+by <a href="https://www.youtube.com/user/bigclivedotcom">Big Clive</a> on his YouTube
+channel.  Once it arrived, I spotted a MicroUSB port on the top edge.  Plugging
+in a cable and trying to connect achieved absolutely nothing, so I did a little
+reading and took it as an excuse to learn more <a href="https://www.golang.org">Go</a>.</p>
+
+<p>The device connects via RS-485 over USB (it implements a USB/Serial adapter),
+and you interact with it using the <a href="1">Modbus protocol</a>.</p>
+
+<p>Modbus accepts read and write operations on coils and registers.  It&rsquo;s used
+in <a href="https://en.wikipedia.org/wiki/SCADA">SCADA</a> applications.  A coil, as the name suggests can be something
+like a fan coil or an electromechanical relay, but is generally used to
+indicate any element of a system capable of being controlled remotely.
+Reading the coil will fetch the state, and writing will change the state
+if the value written differs from the initial state.</p>
+
+<p>The HOPI doesn&rsquo;t have the facility to control anything.  It&rsquo;s simply a box you
+plug into a mains socket which in turn has a socket mounted on the front of the
+device under a set of seven-segment displays.  I had a need to read from the
+holding registers on the device, which indicate:</p>
+
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/AC_power#Active,_reactive,_and_apparent_power">Active</a> Power (Watts)</li>
+<li><a href="https://en.wikipedia.org/wiki/Root_mean_square">RMS</a> <a href="https://en.wikipedia.org/wiki/Electric_current">Current</a> (Amperes)</li>
+<li><a href="https://en.wikipedia.org/wiki/Voltage">Voltage</a> (Volts)</li>
+<li><a href="https://en.wikipedia.org/wiki/Utility_frequency">Frequency</a> (Hertz)</li>
+<li><a href="https://en.wikipedia.org/wiki/Power_factor">Power Factor</a></li>
+</ul>
+
+<p>Modbus operations are denoted by function codes which can be found on this
+<a href="https://www.csimn.com/CSI_pages/Modbus101.html">page</a>, they are one-byte in length.  The function code I am using is 0x03
+<a href="https://www.modbustools.com/modbus.html#function03">Read Holding Registers</a>.</p>
+
+<p>Working out how to fudge this together in Go was helped by <a href="https://github.com/lornix/hopi_hp-9800">this tool</a> by
+<a href="https://github.com/lornix">lornix</a>.  Modbus uses <a href="https://betterexplained.com/articles/understanding-big-and-little-endian-byte-order/">big-endian (network byte order)</a> representation
+to represent data so there was a small conversion necessary in order to convert
+to a format that could be usable on my Debian/Windows machines.</p>
+
+<p>It&rsquo;s necessary to indicate at which address you need to begin reading in order
+to get the individual registers.  Lornix has used offsets in his code, but I
+know voltage starts at 5, which actually maps to #40001 internally.  The
+<a href="https://github.com/goburrow/modbus">goburrow/modbus</a> library makes this mostly transparent and I could take
+slices of the byte array that the library function returned.</p>
+
+<p>I plan to add an option for machine-parsable output and continuous operation.
+It seems like it might be a cost-effective way for an amateur to monitor
+power usage over time without dropping a load of cash on professional-grade
+equipment.  Comma or tab-separated values and either a script or even Excel
+can give you a graph.</p>
+
+<h2 id="how-did-i-work-the-values-out">How Did I Work The Values Out?</h2>
+
+<p>Here&rsquo;s a dump of traffic I captured using a Windows-based application.
+We&rsquo;re using function code 0x03 (Read Holding Registers) on address #5
+which returns the voltage the meter is measuring at the time of execution.  I
+know the response begins with the slave ID and the function code from the
+request.  I also know it ends with a checksum.  I just looked for something
+in the middle that looked like the data I needed.</p>
+
+<p>Request: (8 bytes)</p>
+
+<pre><code>01 03 00 00 00 0A C5 CD
+</code></pre>
+
+<p>Response: (25 bytes)</p>
+
+<pre><code>01 03 14 00 00 00 00 00 00 00 00 A1 39 63 43 D2 C7 47 42 00 00 00 00 97 4A
+</code></pre>
+
+<p>I got a message ending:</p>
+
+<pre><code>65 43 57 e1
+</code></pre>
+
+<p>which when you represent it as <code>4365e157</code> comes out at <strong>229.88</strong> which was
+about what the meter was reading at the time.  I re-checked it at different
+times of the day as voltage here can fluctuate between about 210V and 245V.
+It all looked good.</p>
+
+<p>You would read it as follows:</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">2nd</th>
+<th align="center">1st</th>
+<th align="center">4th</th>
+<th align="center">3rd</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">65</td>
+<td align="center">43</td>
+<td align="center">57</td>
+<td align="center">e1</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="center">1st</th>
+<th align="center">2nd</th>
+<th align="center">3rd</th>
+<th align="center">4th</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">43</td>
+<td align="center">65</td>
+<td align="center">e1</td>
+<td align="center">57</td>
+</tr>
+</tbody>
+</table>
+
+<p>Converting <code>4365e157</code> to a <code>float32</code> gave me what I needed.</p>
+
+<h2 id="miscellaneous">Miscellaneous</h2>
+
+<ul>
+<li>Chipkin page on <a href="https://store.chipkin.com/articles/how-real-floating-point-and-32-bit-data-is-encoded-in-modbus-rtu-messages">how data is represented</a></li>
+<li><a href="http://cs.lmu.edu/~ray/demos/ieee754.html">IEEE 754 encoder/decoder</a> by Ray Toal, Loyola Marymount University</li>
+
+<li><p><a href="http://modbus.rapidscada.net/">Rapid Scada Modbus Parser</a></p></li>
+
+<li><p>[ ] Continuous Mode</p></li>
+
+<li><p>[ ] Machine-Parsable Output</p></li>
+
+<li><p>[ ] Dump to RRD</p></li>
+
+<li><p>[ ] Prometheus Metrics</p></li>
+</ul>
+
+</main>
+
+    <footer>
+      
+<script>
+(function() {
+  function center_el(tagName) {
+    var tags = document.getElementsByTagName(tagName), i, tag;
+    for (i = 0; i < tags.length; i++) {
+      tag = tags[i];
+      var parent = tag.parentElement;
+      
+      if (parent.childNodes.length === 1) {
+        
+        if (parent.nodeName === 'A') {
+          parent = parent.parentElement;
+          if (parent.childNodes.length != 1) continue;
+        }
+        if (parent.nodeName === 'P') parent.style.textAlign = 'center';
+      }
+    }
+  }
+  var tagNames = ['img', 'embed', 'object'];
+  for (var i = 0; i < tagNames.length; i++) {
+    center_el(tagNames[i]);
+  }
+})();
+</script>
+
+      
+      <hr/>
+      Template: Open-Source | <a href="https://github.com/goodroot/hugo-classic">Github</a> | <a href="https://twitter.com/thegoodroot">Twitter</a>
+      
+    </footer>
+  </body>
+</html>
+

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Mike Johnson</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Mike Johnson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sat, 24 Aug 2019 15:57:36 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>cv</title>
+      <link>/tags/cv/</link>
+      <pubDate>Sat, 24 Aug 2019 15:57:36 +0000</pubDate>
+      
+      <guid>/tags/cv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>resume</title>
+      <link>/tags/resume/</link>
+      <pubDate>Sat, 24 Aug 2019 15:57:36 +0000</pubDate>
+      
+      <guid>/tags/resume/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>google</title>
+      <link>/tags/google/</link>
+      <pubDate>Thu, 22 Aug 2019 13:40:00 +0000</pubDate>
+      
+      <guid>/tags/google/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>health</title>
+      <link>/tags/health/</link>
+      <pubDate>Thu, 22 Aug 2019 13:40:00 +0000</pubDate>
+      
+      <guid>/tags/health/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>streams</title>
+      <link>/tags/streams/</link>
+      <pubDate>Thu, 22 Aug 2019 13:40:00 +0000</pubDate>
+      
+      <guid>/tags/streams/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>work</title>
+      <link>/tags/work/</link>
+      <pubDate>Thu, 22 Aug 2019 13:40:00 +0000</pubDate>
+      
+      <guid>/tags/work/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gpg</title>
+      <link>/tags/gpg/</link>
+      <pubDate>Wed, 14 Aug 2019 21:00:00 +0000</pubDate>
+      
+      <guid>/tags/gpg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tools</title>
+      <link>/tags/tools/</link>
+      <pubDate>Wed, 14 Aug 2019 21:00:00 +0000</pubDate>
+      
+      <guid>/tags/tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ai</title>
+      <link>/tags/ai/</link>
+      <pubDate>Sun, 24 Mar 2019 21:00:00 +0000</pubDate>
+      
+      <guid>/tags/ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>alphago</title>
+      <link>/tags/alphago/</link>
+      <pubDate>Sun, 24 Mar 2019 21:00:00 +0000</pubDate>
+      
+      <guid>/tags/alphago/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>china</title>
+      <link>/tags/china/</link>
+      <pubDate>Sun, 24 Mar 2019 21:00:00 +0000</pubDate>
+      
+      <guid>/tags/china/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>deepmind</title>
+      <link>/tags/deepmind/</link>
+      <pubDate>Sun, 24 Mar 2019 21:00:00 +0000</pubDate>
+      
+      <guid>/tags/deepmind/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>events</title>
+      <link>/tags/events/</link>
+      <pubDate>Sun, 24 Mar 2019 21:00:00 +0000</pubDate>
+      
+      <guid>/tags/events/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shanghai</title>
+      <link>/tags/shanghai/</link>
+      <pubDate>Sun, 24 Mar 2019 21:00:00 +0000</pubDate>
+      
+      <guid>/tags/shanghai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wuzhen</title>
+      <link>/tags/wuzhen/</link>
+      <pubDate>Sun, 24 Mar 2019 21:00:00 +0000</pubDate>
+      
+      <guid>/tags/wuzhen/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

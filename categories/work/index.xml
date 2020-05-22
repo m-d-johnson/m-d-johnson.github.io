@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>work on Mike Johnson</title>
+    <link>/categories/work/</link>
+    <description>Recent content in work on Mike Johnson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 22 Aug 2019 13:40:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/work/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DeepMind Health</title>
+      <link>/tech/work/google-health/</link>
+      <pubDate>Thu, 22 Aug 2019 13:40:00 +0000</pubDate>
+      
+      <guid>/tech/work/google-health/</guid>
+      <description>I was involved with DeepMind Health from its very early days. As I&amp;rsquo;m under NDA, I can&amp;rsquo;t go into details here. This is a shame, as DeepMind Health has been quite successful. We produced the Streams application as well as some notable research output on the subject of computerised analysis of retinal imaging paper available here. DeepMind Health eventually became part of the new Google Health effort. My role was focused around providing infrastructure for us to start handling data in the right way for us, the NHS, and its patients.</description>
+    </item>
+    
+    <item>
+      <title>AlphaGo in Wuzhen, China</title>
+      <link>/tech/work/wuzhen/</link>
+      <pubDate>Sun, 24 Mar 2019 21:00:00 +0000</pubDate>
+      
+      <guid>/tech/work/wuzhen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning about HPC in Durham - The IPPP</title>
+      <link>/tech/work/ippp/</link>
+      <pubDate>Fri, 22 Mar 2019 21:00:00 +0000</pubDate>
+      
+      <guid>/tech/work/ippp/</guid>
+      <description>When I worked in Durham, one of my jobs was with the Institute for Particle Physics Phenomenology. While working with the scientists at the IPPP, I looked after scientific compute clusters, group computing services, and Linux desktops. It was here that I had the honour of sitting with the group&amp;rsquo;s scientists as CERN announced the discovery of the Higgs Boson. This is a moment I won&amp;rsquo;t ever forget, and my time at the IPPP gave me a respect for scientific research, and those who devote their lives to it, that will last me a lifetime.</description>
+    </item>
+    
+  </channel>
+</rss>

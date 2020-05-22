@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-04-11T21:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/drafts/</loc>
+    <lastmod>2020-04-11T21:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-04-11T21:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tech/</loc>
+    <lastmod>2020-04-11T21:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tech/drafts/draft1/</loc>
+    <lastmod>2020-04-11T21:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2019-08-24T15:57:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/cv/</loc>
+    <lastmod>2019-08-24T15:57:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/cv/</loc>
+    <lastmod>2019-08-24T15:57:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/personal/</loc>
+    <lastmod>2019-08-24T15:57:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/resume/</loc>
+    <lastmod>2019-08-24T15:57:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-08-24T15:57:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tech/work/google-health/</loc>
+    <lastmod>2019-08-22T13:40:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/google/</loc>
+    <lastmod>2019-08-22T13:40:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/health/</loc>
+    <lastmod>2019-08-22T13:40:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/streams/</loc>
+    <lastmod>2019-08-22T13:40:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/work/</loc>
+    <lastmod>2019-08-22T13:40:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/work/</loc>
+    <lastmod>2019-08-22T13:40:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/gpg/</loc>
+    <lastmod>2019-08-14T21:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/gpg/</loc>
+    <lastmod>2019-08-14T21:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/tools/</loc>
+    <lastmod>2019-08-14T21:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/whatiuse/</loc>
+    <lastmod>2019-08-14T21:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ai/</loc>
+    <lastmod>2019-03-24T21:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/alphago/</loc>
+    <lastmod>2019-03-24T21:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tech/work/wuzhen/</loc>
+    <lastmod>2019-03-24T21:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/china/</loc>
+    <lastmod>2019-03-24T21:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/deepmind/</loc>
+    <lastmod>2019-03-24T21:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/events/</loc>
+    <lastmod>2019-03-24T21:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/shanghai/</loc>
+    <lastmod>2019-03-24T21:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/wuzhen/</loc>
+    <lastmod>2019-03-24T21:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/me/</loc>
+    <lastmod>2019-03-24T15:57:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tech/work/ippp/</loc>
+    <lastmod>2019-03-22T21:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/play/</loc>
+    <lastmod>2019-03-16T21:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tech/personal/gojuice/</loc>
+    <lastmod>2019-03-16T21:00:00+00:00</lastmod>
+  </url>
+  
+</urlset>

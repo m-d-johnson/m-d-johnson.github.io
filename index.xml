@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Mike Johnson</title>
+    <link>/</link>
+    <description>Recent content in Home on Mike Johnson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sat, 11 Apr 2020 21:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>test page :: draft1</title>
+      <link>/tech/drafts/draft1/</link>
+      <pubDate>Sat, 11 Apr 2020 21:00:00 +0000</pubDate>
+      
+      <guid>/tech/drafts/draft1/</guid>
+      <description> Playing with Hugo  </description>
+    </item>
+    
+    <item>
+      <title>CV</title>
+      <link>/about/cv/</link>
+      <pubDate>Sat, 24 Aug 2019 15:57:36 +0000</pubDate>
+      
+      <guid>/about/cv/</guid>
+      <description>Curriculum Vitae - Mike Johnson Summary Experienced DevOps engineer and Linux system administrator with cloud experience on GCP. I have a particular interest in High Performance Computing for researchers and engineers. Free software proponent.
+Professional experience
+May 2014 to Nov 2019: SRE - Systems Engineer (ex. DevOps, ex SA) - DeepMind, Google Health UK
+I designed, built, developed, and maintained the infrastructure and platform for DeepMind Health - built on Linux, running Docker and Kubernetes, and isolated from the Google production network.</description>
+    </item>
+    
+    <item>
+      <title>DeepMind Health</title>
+      <link>/tech/work/google-health/</link>
+      <pubDate>Thu, 22 Aug 2019 13:40:00 +0000</pubDate>
+      
+      <guid>/tech/work/google-health/</guid>
+      <description>I was involved with DeepMind Health from its very early days. As I&amp;rsquo;m under NDA, I can&amp;rsquo;t go into details here. This is a shame, as DeepMind Health has been quite successful. We produced the Streams application as well as some notable research output on the subject of computerised analysis of retinal imaging paper available here. DeepMind Health eventually became part of the new Google Health effort. My role was focused around providing infrastructure for us to start handling data in the right way for us, the NHS, and its patients.</description>
+    </item>
+    
+    <item>
+      <title>GPG Public Key</title>
+      <link>/about/gpg/</link>
+      <pubDate>Wed, 14 Aug 2019 21:00:00 +0000</pubDate>
+      
+      <guid>/about/gpg/</guid>
+      <description>If you know what gpg is, you can use the following in communication with me.
+-----BEGIN PGP PUBLIC KEY BLOCK----- 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 =UmOp -----END PGP PUBLIC KEY BLOCK-----  </description>
+    </item>
+    
+    <item>
+      <title>What I Use</title>
+      <link>/about/whatiuse/</link>
+      <pubDate>Wed, 14 Aug 2019 21:00:00 +0000</pubDate>
+      
+      <guid>/about/whatiuse/</guid>
+      <description>Inspired by (copied from) several others, I thought I&amp;rsquo;d have a go at putting some notes together on what I use day-to-day.
+ Ali Spittel Wes Bos Jessica Dembe Ben Hong  This was inspired by a Twitter thread started by Sarah Drasner that I spotted in July 2019.
+I&amp;rsquo;m not a software engineer, and I never have been. My current job title is &amp;lsquo;Systems Engineer, Site Reliability Engineer&amp;rsquo;, but most of my career has been spent answering to &amp;lsquo;System Administrator&amp;rsquo;.</description>
+    </item>
+    
+    <item>
+      <title>AlphaGo in Wuzhen, China</title>
+      <link>/tech/work/wuzhen/</link>
+      <pubDate>Sun, 24 Mar 2019 21:00:00 +0000</pubDate>
+      
+      <guid>/tech/work/wuzhen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Me</title>
+      <link>/about/me/</link>
+      <pubDate>Sun, 24 Mar 2019 15:57:36 +0000</pubDate>
+      
+      <guid>/about/me/</guid>
+      <description>Hi. My name is Mike Johnson. I work for Google.</description>
+    </item>
+    
+    <item>
+      <title>Learning about HPC in Durham - The IPPP</title>
+      <link>/tech/work/ippp/</link>
+      <pubDate>Fri, 22 Mar 2019 21:00:00 +0000</pubDate>
+      
+      <guid>/tech/work/ippp/</guid>
+      <description>When I worked in Durham, one of my jobs was with the Institute for Particle Physics Phenomenology. While working with the scientists at the IPPP, I looked after scientific compute clusters, group computing services, and Linux desktops. It was here that I had the honour of sitting with the group&amp;rsquo;s scientists as CERN announced the discovery of the Higgs Boson. This is a moment I won&amp;rsquo;t ever forget, and my time at the IPPP gave me a respect for scientific research, and those who devote their lives to it, that will last me a lifetime.</description>
+    </item>
+    
+    <item>
+      <title>Poking around the HOPI HP-9800</title>
+      <link>/tech/personal/gojuice/</link>
+      <pubDate>Sat, 16 Mar 2019 21:00:00 +0000</pubDate>
+      
+      <guid>/tech/personal/gojuice/</guid>
+      <description>Playing with the HOPI HP-9800 Here&amp;rsquo;s a link to the GitHub repository
+I recently bought one of these power analysers from eBay after seeing it used by Big Clive on his YouTube channel. Once it arrived, I spotted a MicroUSB port on the top edge. Plugging in a cable and trying to connect achieved absolutely nothing, so I did a little reading and took it as an excuse to learn more Go.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>play on Mike Johnson</title>
+    <link>/categories/play/</link>
+    <description>Recent content in play on Mike Johnson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sat, 16 Mar 2019 21:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/play/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Poking around the HOPI HP-9800</title>
+      <link>/tech/personal/gojuice/</link>
+      <pubDate>Sat, 16 Mar 2019 21:00:00 +0000</pubDate>
+      
+      <guid>/tech/personal/gojuice/</guid>
+      <description>Playing with the HOPI HP-9800 Here&amp;rsquo;s a link to the GitHub repository
+I recently bought one of these power analysers from eBay after seeing it used by Big Clive on his YouTube channel. Once it arrived, I spotted a MicroUSB port on the top edge. Plugging in a cable and trying to connect achieved absolutely nothing, so I did a little reading and took it as an excuse to learn more Go.</description>
+    </item>
+    
+  </channel>
+</rss>
